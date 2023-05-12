@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/dimGray"
+    >
+    <LinearLayout
+        android:id="@+id/bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+            android:text="ΕΠΙΛΕΞΕ ΑΓΩΝΙΣΤΙΚΗ"
+            android:textAlignment="center"
+            android:textColor="#D6ECFD"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="409dp"
+            android:layout_height="54dp"
+            android:layout_marginTop="32dp"
+            android:background="@color/dimGray"
+            android:text="1η ΑΓΩΝΙΣΤΙΚΗ"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="409dp"
+            android:layout_height="54dp"
+            android:background="@color/dimGray"
+            android:text="2η ΑΓΩΝΙΣΤΙΚΗ"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="409dp"
+            android:layout_height="54dp"
+            android:background="@color/dimGray"
+            android:text="3η ΑΓΩΝΙΣΤΙΚΗ"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="409dp"
+            android:layout_height="54dp"
+            android:background="@color/dimGray"
+            android:text="4η ΑΓΩΝΙΣΤΙΚΗ"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="409dp"
+            android:layout_height="54dp"
+            android:background="@color/dimGray"
+            android:text="5η ΑΓΩΝΙΣΤΙΚΗ"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="409dp"
+            android:layout_height="54dp"
+            android:background="@color/dimGray"
+            android:text="6η ΑΓΩΝΙΣΤΙΚΗ"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="409dp"
+            android:layout_height="54dp"
+            android:background="@color/dimGray"
+            android:text="7η ΑΓΩΝΙΣΤΙΚΗ"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/button8"
+            android:layout_width="409dp"
+            android:layout_height="54dp"
+            android:background="@color/dimGray"
+            android:text="8η ΑΓΩΝΙΣΤΙΚΗ"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/button9"
+            android:layout_width="409dp"
+            android:layout_height="54dp"
+            android:background="@color/dimGray"
+            android:text="9η ΑΓΩΝΙΣΤΙΚΗ"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+</LinearLayout>

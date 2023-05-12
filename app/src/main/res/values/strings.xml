@@ -1,0 +1,129 @@
+<resources>
+    <string name="app_name">ESAKE</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="IN">IN</string>
+    <string name="back">Back</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="tname1">team1</string>
+    <string name="tname2">team2</string>
+    <string name="sname1">score1</string>
+    <string name="sname2">score2</string>
+    <string name="Adminview">Admin view</string>
+    <string name="Timer">Time</string>
+    <string name="AEK">Players Aek</string>
+    <string name="ARIS">Players Aris</string>
+    <string name="OUT">OUT</string>
+    <string name="STEAL">STEAL</string>
+    <string name="FOUL">FOUL</string>
+    <string name="TURNOVER">TURNOVER</string>
+    <string name="Admin2" translatable="false">IN/OUT screen</string>
+    <string name="BALLIN">BALL IN</string>
+    <string name="BALLOUT">BALL OUT</string>
+    <string name="ASSIST">ASSIST</string>
+    <string name="REB">REB</string>
+    <string name="BLOCK">BLOCK</string>
+    <string name="point1">+1</string>
+    <string name="point2">+2</string>
+    <string name="point3">+3</string>
+    <string name="Admin2ctext">ΔΙΑΛΕΞΕ ΤΙΣ ΟΜΑΔΕΣ ΤΟΥ ΑΓΩΝΑ</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="arisplayers">
+        <item> COWAN JR</item>
+        <item> HANLAN </item>
+        <item> JUISTON </item>
+        <item> KAMARAS </item>
+        <item> KWTTAS </item>
+        <item> LOCKETT </item>
+        <item> PETANIDIS </item>
+        <item> SIDIROLIAS </item>
+        <item> SXIZAS </item>
+        <item> WILLIAMS></item>
+    </string-array>
+    <string-array name="aekplayers">
+        <item>LANGFORD</item>
+        <item>PAPPAS</item>
+        <item>ANGOLA</item>
+        <item>PETROPOULOS</item>
+        <item>KARLIS</item>
+        <item>KARLIS</item>
+        <item>KONIARIS</item>
+        <item>GOGOLOS</item>
+        <item>MAVROIDIS</item>
+        <item>MOUZOURAKIS</item>
+    </string-array>
+    <string-array name="teams3c">
+        <item>ARHS</item>
+        <item>OSFP</item>
+        <item>AEK</item>
+        <item>PAO</item>
+        <item>PAOK</item>
+    </string-array>
+
+
+    <string name="next">⇽</string>
+    <string name="Team">Team Statistics</string>
+    <string name="hash">#</string>
+    <string name="Teamnav">Team</string>
+    <string name="Winper">Win%</string>
+    <string name="PPG">PPG</string>
+    //teams
+    <string name="team1">ΟΣΦ</string>
+    <string name="team2">ΑΕΚ</string>
+    <string name="team3">ΑΡΗΣ</string>
+    <string name="team4">ΙΟΝ</string>
+    <string name="team5">ΚΟΛ</string>
+    <string name="team6">ΛΑΡ</string>
+    <string name="team7">ΠΑΝ</string>
+    <string name="team8">ΠΑΟΚ</string>
+    <string name="team9">ΠΕΡ</string>
+    <string name="team10">ΠΡΟ</string>
+    <string name="Reb">Reb</string>
+    <string name="As">As</string>
+    <string name="previous">Previous</string>
+
+    <string name="next_button">NEXT</string>
+    <string name="back_button">BACK</string>
+    <string name="admin_view">ADMIN VIEW</string>
+    <string name="home_team">Home Team</string>
+    <string name="visiting_team">Visiting Team</string>
+    <string name="team_players">Team Players</string>
+    <string name="bench_players">Bench Players</string>
+    <string-array name="players_aek">
+        <item>Select player</item>
+        <item>LANGFORD</item>
+        <item>PAPPS</item>
+        <item>ANGOLA</item>
+        <item>PETROPOULOS</item>
+        <item>KARLIS</item>
+        <item>KARLIS</item>
+        <item>KONIARIS</item>
+        <item>GOGOLOS</item>
+        <item>MAVROIDIS</item>
+        <item>PAPPS</item>
+        <item>MOUZOURAKIS</item>
+    </string-array>
+    <string-array name="players_paok">
+        <item>Select player</item>
+        <item>RIVERS</item>
+        <item>LEE</item>
+        <item>GREENE</item>
+        <item>PETROPOULOS</item>
+        <item>CHRISTODOULOU</item>
+        <item>LOVE</item>
+        <item>KAMARIANOS</item>
+        <item>DILEO</item>
+        <item>MANTZARIS</item>
+        <item>ROUMOGLOU</item>
+        <item>KAMPERIDIS</item>
+    </string-array>
+
+
+</resources>

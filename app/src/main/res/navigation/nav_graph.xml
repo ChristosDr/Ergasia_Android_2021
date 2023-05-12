@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/StartFragment">
+
+    <fragment
+        android:id="@+id/Admin2a"
+        android:name="com.example.esake.Admin2aFragment"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/fragment_admin2a" >
+
+        <action
+            android:id="@+id/action_FirstFragment_to_SecondFragment"
+            app:destination="@id/Admin2b" />
+        <argument
+            android:name="team1"
+            app:argType="string" />
+        <argument
+            android:name="team2"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/Admin2b"
+        android:name="com.example.esake.Admin2bFragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/fragment_admin2b" >
+        <argument
+            android:name="team1b"
+            app:argType="string" />
+        <argument
+            android:name="team2b"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/StartFragment"
+        android:name="com.example.esake.StartFragment"
+        android:label="fragment_start"
+        tools:layout="@layout/fragment_start" >
+        <action
+            android:id="@+id/action_start2_to_FirstFragment"
+            app:destination="@id/admin2cFragment" />
+        <action
+            android:id="@+id/action_StartFragment_to_admin3Fragment2"
+            app:destination="@id/admin3Fragment2" />
+        <action
+            android:id="@+id/action_StartFragment_to_user4fragment"
+            app:destination="@id/user4fragment" />
+        <action
+            android:id="@+id/action_StartFragment_to_user6Fragment"
+            app:destination="@id/user6Fragment" />
+        <action
+            android:id="@+id/action_StartFragment_to_user7Fragment"
+            app:destination="@id/user7Fragment" />
+        <action
+            android:id="@+id/action_StartFragment_to_user8Fragment"
+            app:destination="@id/user8Fragment" />
+        <action
+            android:id="@+id/action_StartFragment_to_user9aFragment"
+            app:destination="@id/user9aFragment" />
+        <action
+            android:id="@+id/action_StartFragment_to_user5Fragment"
+            app:destination="@id/user5Fragment" />
+        <action
+            android:id="@+id/action_StartFragment_to_admin1aFragment4"
+            app:destination="@id/admin1aFragment4" />
+    </fragment>
+    <fragment
+        android:id="@+id/admin3Fragment2"
+        android:name="com.example.esake.Admin3Fragment"
+        android:label="fragment_admin3"
+        tools:layout="@layout/fragment_admin3" />
+    <fragment
+        android:id="@+id/user4fragment"
+        android:name="com.example.esake.User4fragment"
+        android:label="fragment_user4"
+        tools:layout="@layout/fragment_user4" />
+    <fragment
+        android:id="@+id/user6Fragment"
+        android:name="com.example.esake.User6aFragment"
+        android:label="fragment_user6"
+        tools:layout="@layout/fragment_user6a" >
+        <action
+            android:id="@+id/action_user6Fragment_to_user6bFragment"
+            app:destination="@id/user6bFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/user6bFragment"
+        android:name="com.example.esake.User6bFragment"
+        android:label="fragment_user6b"
+        tools:layout="@layout/fragment_user6b" >
+        <action
+            android:id="@+id/action_user6bFragment_to_user6cFragment"
+            app:destination="@id/user6cFragment" />
+        <argument
+            android:name="MyArg"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/user6cFragment"
+        android:name="com.example.esake.User6cFragment"
+        android:label="fragment_user6c"
+        tools:layout="@layout/fragment_user6c" >
+        <argument
+            android:name="MyArg2"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/user7Fragment"
+        android:name="com.example.esake.User7Fragment"
+        android:label="fragment_user7"
+        tools:layout="@layout/fragment_user7" />
+    <fragment
+        android:id="@+id/user8Fragment"
+        android:name="com.example.esake.User8Fragment"
+        android:label="fragment_user8"
+        tools:layout="@layout/fragment_user8" />
+    <fragment
+        android:id="@+id/user9aFragment"
+        android:name="com.example.esake.User9aFragment"
+        android:label="User9aFragment" >
+        <action
+            android:id="@+id/action_user9aFragment_to_user9bFragment"
+            app:destination="@id/user9bFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/user9bFragment"
+        android:name="com.example.esake.User9bFragment"
+        android:label="User9bFragment" />
+    <fragment
+        android:id="@+id/admin2cFragment"
+        android:name="com.example.esake.Admin2cFragment"
+        android:label="fragment_admin2c"
+        tools:layout="@layout/fragment_admin2c" >
+        <action
+            android:id="@+id/action_admin2cFragment_to_Admin2a"
+            app:destination="@id/Admin2a" />
+    </fragment>
+    <fragment
+        android:id="@+id/user5Fragment"
+        android:name="com.example.esake.User5Fragment"
+        android:label="fragment_user5"
+        tools:layout="@layout/fragment_user5" />
+    <fragment
+        android:id="@+id/admin1aFragment4"
+        android:name="com.example.esake.Admin1aFragment"
+        android:label="fragment_admin1a"
+        tools:layout="@layout/fragment_admin1a" >
+        <action
+            android:id="@+id/action_admin1aFragment4_to_admin1bFragment"
+            app:destination="@id/admin1bFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/admin1bFragment"
+        android:name="com.example.esake.Admin1bFragment"
+        android:label="fragment_admin1b"
+        tools:layout="@layout/fragment_admin1b" />
+</navigation>

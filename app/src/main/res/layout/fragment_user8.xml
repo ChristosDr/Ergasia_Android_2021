@@ -1,0 +1,1123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".User8Fragment">
+
+    <Button
+        android:id="@+id/button_first"
+        android:layout_width="54dp"
+        android:layout_height="70dp"
+        android:text="@string/next"
+        android:textSize="24sp"
+        app:backgroundTint="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/Title"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/Title"
+        android:layout_width="321dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="52dp"
+        android:background="@color/darkgrey"
+        android:gravity="center"
+        android:text="@string/Team"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:paddingBottom="90dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Title">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TableRow
+                android:id="@+id/team1"
+                android:layout_width="324dp"
+                android:layout_height="55dp"
+                android:background="@color/darkgrey"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/info">
+
+                <TextView
+                    android:id="@+id/hash5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="65dp"
+                    android:padding="10dp"
+                    android:text="@string/hash"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toStartOf="@+id/teamnav"
+                    app:layout_constraintTop_toBottomOf="@+id/Title" />
+
+                <TextView
+                    android:id="@+id/teamnav3"
+                    android:layout_width="109dp"
+                    android:layout_height="65dp"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:padding="10dp"
+                    android:text="@string/Teamnav"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toStartOf="@+id/winper"
+                    app:layout_constraintTop_toBottomOf="@+id/Title" />
+
+                <TextView
+                    android:id="@+id/winper0"
+                    android:layout_width="58dp"
+                    android:layout_height="65dp"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:padding="10dp"
+                    android:text="@string/Winper"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toStartOf="@+id/PPG"
+                    app:layout_constraintTop_toBottomOf="@+id/Title" />
+
+                <TextView
+                    android:id="@+id/PPG7"
+                    android:layout_width="40dp"
+                    android:layout_height="65dp"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:padding="10dp"
+                    android:text="@string/PPG"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toStartOf="@+id/reb"
+                    app:layout_constraintTop_toBottomOf="@+id/Title" />
+
+                <TextView
+                    android:id="@+id/reb7"
+                    android:layout_width="43dp"
+                    android:layout_height="65dp"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:padding="10dp"
+                    android:text="@string/Reb"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toStartOf="@+id/as"
+                    app:layout_constraintTop_toBottomOf="@+id/Title" />
+
+                <TextView
+                    android:id="@+id/as7"
+                    android:layout_width="44dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:padding="10dp"
+                    android:text="@string/As"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/Title" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/info"
+                android:layout_width="323dp"
+                android:layout_height="40dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Title">
+
+                <TextView
+                    android:id="@+id/one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/grey"
+                    android:padding="10dp"
+                    android:text="1"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toStartOf="@+id/team1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/hash" />
+
+                <TextView
+                    android:id="@+id/name1"
+                    android:layout_width="106dp"
+                    android:layout_height="67dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/grey"
+                    android:gravity="center_horizontal"
+                    android:padding="10dp"
+                    android:text="@string/team1"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toStartOf="@+id/winper2"
+                    app:layout_constraintTop_toBottomOf="@+id/teamnav" />
+
+                <TextView
+                    android:id="@+id/winper1"
+                    android:layout_width="58dp"
+                    android:layout_height="61dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/grey"
+                    android:gravity="center_horizontal"
+                    android:padding="10dp"
+                    android:text="00"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toStartOf="@+id/PPG2"
+                    app:layout_constraintTop_toBottomOf="@+id/winper" />
+
+                <TextView
+                    android:id="@+id/PPG1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="61dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/grey"
+                    android:gravity="center_horizontal"
+                    android:padding="10dp"
+                    android:text="00"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toStartOf="@+id/reb2"
+                    app:layout_constraintTop_toBottomOf="@+id/PPG" />
+
+                <TextView
+                    android:id="@+id/reb1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="61dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/grey"
+                    android:gravity="center_horizontal"
+                    android:padding="10dp"
+                    android:text="00"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toStartOf="@+id/as2"
+                    app:layout_constraintTop_toBottomOf="@+id/reb" />
+
+                <TextView
+                    android:id="@+id/as1"
+                    android:layout_width="47dp"
+                    android:layout_height="63dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/grey"
+                    android:gravity="center_horizontal"
+                    android:padding="10dp"
+                    android:text="00"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/as" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/team2"
+                android:layout_width="322dp"
+                android:layout_height="55dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/team1">
+
+                <TextView
+                    android:id="@+id/two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@color/grey"
+                    android:padding="10dp"
+                    android:text="2"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toStartOf="@+id/team1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/hash" />
+
+                <TextView
+                    android:id="@+id/name2"
+                    android:layout_width="105dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/grey"
+                    android:gravity="center_horizontal"
+                    android:padding="10dp"
+                    android:text="@string/team2"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toStartOf="@+id/winper2"
+                    app:layout_constraintTop_toBottomOf="@+id/teamnav" />
+
+                <TextView
+                    android:id="@+id/winper2"
+                    android:layout_width="58dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/grey"
+                    android:gravity="center_horizontal"
+                    android:padding="10dp"
+                    android:text="00"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toStartOf="@+id/PPG2"
+                    app:layout_constraintTop_toBottomOf="@+id/winper" />
+
+                <TextView
+                    android:id="@+id/PPG2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/grey"
+                    android:gravity="center_horizontal"
+                    android:padding="10dp"
+                    android:text="00"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toStartOf="@+id/reb2"
+                    app:layout_constraintTop_toBottomOf="@+id/PPG" />
+
+                <TextView
+                    android:id="@+id/reb2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/grey"
+                    android:gravity="center_horizontal"
+                    android:padding="10dp"
+                    android:text="00"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toStartOf="@+id/as2"
+                    app:layout_constraintTop_toBottomOf="@+id/reb" />
+
+                <TextView
+                    android:id="@+id/as2"
+                    android:layout_width="47dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/grey"
+                    android:gravity="center_horizontal"
+                    android:padding="10dp"
+                    android:text="00"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/as" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/team4"
+                android:layout_width="325dp"
+                android:layout_height="53dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/team2">
+
+                <TextView
+                    android:id="@+id/tree"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@color/grey"
+                    android:padding="10dp"
+                    android:text="3"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toStartOf="@+id/team1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/hash" />
+
+                <TextView
+                    android:id="@+id/name3"
+                    android:layout_width="104dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/grey"
+                    android:gravity="center_horizontal"
+                    android:padding="10dp"
+                    android:text="@string/team3"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toStartOf="@+id/winper2"
+                    app:layout_constraintTop_toBottomOf="@+id/teamnav" />
+
+                <TextView
+                    android:id="@+id/winper3"
+                    android:layout_width="57dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/grey"
+                    android:gravity="center_horizontal"
+                    android:padding="10dp"
+                    android:text="00"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toStartOf="@+id/PPG2"
+                    app:layout_constraintTop_toBottomOf="@+id/winper" />
+
+                <TextView
+                    android:id="@+id/PPG3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/grey"
+                    android:gravity="center_horizontal"
+                    android:padding="10dp"
+                    android:text="00"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toStartOf="@+id/reb2"
+                    app:layout_constraintTop_toBottomOf="@+id/PPG" />
+
+                <TextView
+                    android:id="@+id/reb3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/grey"
+                    android:gravity="center_horizontal"
+                    android:padding="10dp"
+                    android:text="00"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toStartOf="@+id/as2"
+                    app:layout_constraintTop_toBottomOf="@+id/reb" />
+
+                <TextView
+                    android:id="@+id/as3"
+                    android:layout_width="53dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/grey"
+                    android:gravity="center_horizontal"
+                    android:padding="10dp"
+                    android:text="00"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/as" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow2"
+                android:layout_width="322dp"
+                android:layout_height="55dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/team4">
+
+                <TextView
+                    android:id="@+id/four"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@color/grey"
+                    android:padding="10dp"
+                    android:text="4"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toStartOf="@+id/team1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/hash" />
+
+                <TextView
+                    android:id="@+id/name4"
+                    android:layout_width="104dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/grey"
+                    android:gravity="center_horizontal"
+                    android:padding="10dp"
+                    android:text="@string/team4"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toStartOf="@+id/winper2"
+                    app:layout_constraintTop_toBottomOf="@+id/teamnav" />
+
+                <TextView
+                    android:id="@+id/winper4"
+                    android:layout_width="58dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/grey"
+                    android:gravity="center_horizontal"
+                    android:padding="10dp"
+                    android:text="00"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toStartOf="@+id/PPG2"
+                    app:layout_constraintTop_toBottomOf="@+id/winper" />
+
+                <TextView
+                    android:id="@+id/PPG4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/grey"
+                    android:gravity="center_horizontal"
+                    android:padding="10dp"
+                    android:text="00"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toStartOf="@+id/reb2"
+                    app:layout_constraintTop_toBottomOf="@+id/PPG" />
+
+                <TextView
+                    android:id="@+id/reb4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/grey"
+                    android:gravity="center_horizontal"
+                    android:padding="10dp"
+                    android:text="00"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toStartOf="@+id/as2"
+                    app:layout_constraintTop_toBottomOf="@+id/reb" />
+
+                <TextView
+                    android:id="@+id/as4"
+                    android:layout_width="47dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/grey"
+                    android:gravity="center_horizontal"
+                    android:padding="10dp"
+                    android:text="00"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/as" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow3"
+                android:layout_width="322dp"
+                android:layout_height="55dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tableRow2">
+
+                <TextView
+                    android:id="@+id/five"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@color/grey"
+                    android:padding="10dp"
+                    android:text="5"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toStartOf="@+id/team1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/hash" />
+
+                <TextView
+                    android:id="@+id/name5"
+                    android:layout_width="105dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/grey"
+                    android:gravity="center_horizontal"
+                    android:padding="10dp"
+                    android:text="@string/team5"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toStartOf="@+id/winper2"
+                    app:layout_constraintTop_toBottomOf="@+id/teamnav" />
+
+                <TextView
+                    android:id="@+id/winper5"
+                    android:layout_width="57dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/grey"
+                    android:gravity="center_horizontal"
+                    android:padding="10dp"
+                    android:text="00"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toStartOf="@+id/PPG2"
+                    app:layout_constraintTop_toBottomOf="@+id/winper" />
+
+                <TextView
+                    android:id="@+id/PPG5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/grey"
+                    android:gravity="center_horizontal"
+                    android:padding="10dp"
+                    android:text="00"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toStartOf="@+id/reb2"
+                    app:layout_constraintTop_toBottomOf="@+id/PPG" />
+
+                <TextView
+                    android:id="@+id/reb5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/grey"
+                    android:gravity="center_horizontal"
+                    android:padding="10dp"
+                    android:text="00"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toStartOf="@+id/as2"
+                    app:layout_constraintTop_toBottomOf="@+id/reb" />
+
+                <TextView
+                    android:id="@+id/as5"
+                    android:layout_width="47dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/grey"
+                    android:gravity="center_horizontal"
+                    android:padding="10dp"
+                    android:text="00"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/as" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/team6"
+                android:layout_width="323dp"
+                android:layout_height="55dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tableRow3">
+
+                <TextView
+                    android:id="@+id/six"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@color/grey"
+                    android:padding="10dp"
+                    android:text="6"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toStartOf="@+id/team1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/hash" />
+
+                <TextView
+                    android:id="@+id/name6"
+                    android:layout_width="105dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/grey"
+                    android:gravity="center_horizontal"
+                    android:padding="10dp"
+                    android:text="@string/team6"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toStartOf="@+id/winper2"
+                    app:layout_constraintTop_toBottomOf="@+id/teamnav" />
+
+                <TextView
+                    android:id="@+id/winper12"
+                    android:layout_width="57dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/grey"
+                    android:gravity="center_horizontal"
+                    android:padding="10dp"
+                    android:text="00"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toStartOf="@+id/PPG2"
+                    app:layout_constraintTop_toBottomOf="@+id/winper" />
+
+                <TextView
+                    android:id="@+id/PPG12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/grey"
+                    android:gravity="center_horizontal"
+                    android:padding="10dp"
+                    android:text="00"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toStartOf="@+id/reb2"
+                    app:layout_constraintTop_toBottomOf="@+id/PPG" />
+
+                <TextView
+                    android:id="@+id/reb12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/grey"
+                    android:gravity="center_horizontal"
+                    android:padding="10dp"
+                    android:text="00"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toStartOf="@+id/as2"
+                    app:layout_constraintTop_toBottomOf="@+id/reb" />
+
+                <TextView
+                    android:id="@+id/as12"
+                    android:layout_width="47dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/grey"
+                    android:gravity="center_horizontal"
+                    android:padding="10dp"
+                    android:text="00"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/as" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/team7"
+                android:layout_width="325dp"
+                android:layout_height="55dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/team6">
+
+                <TextView
+                    android:id="@+id/seven"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@color/grey"
+                    android:padding="10dp"
+                    android:text="7"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toStartOf="@+id/team1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/hash" />
+
+                <TextView
+                    android:id="@+id/name7"
+                    android:layout_width="105dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/grey"
+                    android:gravity="center_horizontal"
+                    android:padding="10dp"
+                    android:text="@string/team7"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toStartOf="@+id/winper2"
+                    app:layout_constraintTop_toBottomOf="@+id/teamnav" />
+
+                <TextView
+                    android:id="@+id/winper13"
+                    android:layout_width="57dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/grey"
+                    android:gravity="center_horizontal"
+                    android:padding="10dp"
+                    android:text="00"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toStartOf="@+id/PPG2"
+                    app:layout_constraintTop_toBottomOf="@+id/winper" />
+
+                <TextView
+                    android:id="@+id/PPG13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/grey"
+                    android:gravity="center_horizontal"
+                    android:padding="10dp"
+                    android:text="00"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toStartOf="@+id/reb2"
+                    app:layout_constraintTop_toBottomOf="@+id/PPG" />
+
+                <TextView
+                    android:id="@+id/reb13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/grey"
+                    android:gravity="center_horizontal"
+                    android:padding="10dp"
+                    android:text="00"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toStartOf="@+id/as2"
+                    app:layout_constraintTop_toBottomOf="@+id/reb" />
+
+                <TextView
+                    android:id="@+id/as13"
+                    android:layout_width="47dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/grey"
+                    android:gravity="center_horizontal"
+                    android:padding="10dp"
+                    android:text="00"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/as" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/team8"
+                android:layout_width="324dp"
+                android:layout_height="46dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/team7">
+
+                <TextView
+                    android:id="@+id/eight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@color/grey"
+                    android:padding="10dp"
+                    android:text="8"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toStartOf="@+id/team1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/hash" />
+
+                <TextView
+                    android:id="@+id/name8"
+                    android:layout_width="105dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/grey"
+                    android:gravity="center_horizontal"
+                    android:padding="10dp"
+                    android:text="@string/team8"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toStartOf="@+id/winper2"
+                    app:layout_constraintTop_toBottomOf="@+id/teamnav" />
+
+                <TextView
+                    android:id="@+id/winper14"
+                    android:layout_width="57dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/grey"
+                    android:gravity="center_horizontal"
+                    android:padding="10dp"
+                    android:text="00"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toStartOf="@+id/PPG2"
+                    app:layout_constraintTop_toBottomOf="@+id/winper" />
+
+                <TextView
+                    android:id="@+id/PPG14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/grey"
+                    android:gravity="center_horizontal"
+                    android:padding="10dp"
+                    android:text="00"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toStartOf="@+id/reb2"
+                    app:layout_constraintTop_toBottomOf="@+id/PPG" />
+
+                <TextView
+                    android:id="@+id/reb14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/grey"
+                    android:gravity="center_horizontal"
+                    android:padding="10dp"
+                    android:text="00"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toStartOf="@+id/as2"
+                    app:layout_constraintTop_toBottomOf="@+id/reb" />
+
+                <TextView
+                    android:id="@+id/as14"
+                    android:layout_width="47dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/grey"
+                    android:gravity="center_horizontal"
+                    android:padding="10dp"
+                    android:text="00"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/as" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/team9"
+                android:layout_width="324dp"
+                android:layout_height="57dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/team8">
+
+                <TextView
+                    android:id="@+id/five5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@color/grey"
+                    android:padding="10dp"
+                    android:text="9"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toStartOf="@+id/team1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/hash" />
+
+                <TextView
+                    android:id="@+id/name9"
+                    android:layout_width="105dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/grey"
+                    android:gravity="center_horizontal"
+                    android:padding="10dp"
+                    android:text="@string/team9"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toStartOf="@+id/winper2"
+                    app:layout_constraintTop_toBottomOf="@+id/teamnav" />
+
+                <TextView
+                    android:id="@+id/winper15"
+                    android:layout_width="57dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/grey"
+                    android:gravity="center_horizontal"
+                    android:padding="10dp"
+                    android:text="00"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toStartOf="@+id/PPG2"
+                    app:layout_constraintTop_toBottomOf="@+id/winper" />
+
+                <TextView
+                    android:id="@+id/PPG15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/grey"
+                    android:gravity="center_horizontal"
+                    android:padding="10dp"
+                    android:text="00"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toStartOf="@+id/reb2"
+                    app:layout_constraintTop_toBottomOf="@+id/PPG" />
+
+                <TextView
+                    android:id="@+id/reb15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/grey"
+                    android:gravity="center_horizontal"
+                    android:padding="10dp"
+                    android:text="00"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toStartOf="@+id/as2"
+                    app:layout_constraintTop_toBottomOf="@+id/reb" />
+
+                <TextView
+                    android:id="@+id/as15"
+                    android:layout_width="47dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/grey"
+                    android:gravity="center_horizontal"
+                    android:padding="10dp"
+                    android:text="00"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/as" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/team10"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/team9">
+
+                <TextView
+                    android:id="@+id/five6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@color/grey"
+                    android:padding="10dp"
+                    android:text="10"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toStartOf="@+id/team1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/hash" />
+
+                <TextView
+                    android:id="@+id/name10"
+                    android:layout_width="93dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/grey"
+                    android:gravity="center_horizontal"
+                    android:padding="10dp"
+                    android:text="@string/team10"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toStartOf="@+id/winper2"
+                    app:layout_constraintTop_toBottomOf="@+id/teamnav" />
+
+                <TextView
+                    android:id="@+id/winper16"
+                    android:layout_width="57dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/grey"
+                    android:gravity="center_horizontal"
+                    android:padding="10dp"
+                    android:text="00"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toStartOf="@+id/PPG2"
+                    app:layout_constraintTop_toBottomOf="@+id/winper" />
+
+                <TextView
+                    android:id="@+id/PPG16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/grey"
+                    android:gravity="center_horizontal"
+                    android:padding="10dp"
+                    android:text="00"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toStartOf="@+id/reb2"
+                    app:layout_constraintTop_toBottomOf="@+id/PPG" />
+
+                <TextView
+                    android:id="@+id/reb16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/grey"
+                    android:gravity="center_horizontal"
+                    android:padding="10dp"
+                    android:text="00"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toStartOf="@+id/as2"
+                    app:layout_constraintTop_toBottomOf="@+id/reb" />
+
+                <TextView
+                    android:id="@+id/as16"
+                    android:layout_width="47dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/grey"
+                    android:gravity="center_horizontal"
+                    android:padding="10dp"
+                    android:text="00"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/as" />
+            </TableRow>
+
+            <ScrollView
+                android:layout_width="39dp"
+                android:layout_height="25dp"
+                tools:layout_editor_absoluteX="157dp"
+                tools:layout_editor_absoluteY="68dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" />
+            </ScrollView>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
